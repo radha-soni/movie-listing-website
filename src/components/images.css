@@ -1,0 +1,11 @@
+.grid-container {
+  margin: 100px;
+  display: grid;
+  grid-template-columns: repeat(3, 380px [col-start]);
+}
+@media only screen and (max-width: 800px) {
+  .grid-container {
+    grid-template-columns: repeat(2, 340px [row-start]);
+    margin: 40px;
+  }
+}
